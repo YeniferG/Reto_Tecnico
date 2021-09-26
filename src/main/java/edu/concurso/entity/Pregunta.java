@@ -1,4 +1,4 @@
-package qtx.entity;
+package edu.concurso.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

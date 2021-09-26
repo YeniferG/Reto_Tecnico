@@ -1,8 +1,6 @@
-package qtx.controller;
+package edu.concurso.controller;
 
-import qtx.entity.Categoria;
-import qtx.entity.Conexion;
-import qtx.entity.Jugador;
+import edu.concurso.entity.Jugador;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

@@ -1,5 +1,4 @@
-import qtx.view.GameView;
-import qtx.view.PlayerView;
+import edu.concurso.view.GameView;
 
 public class Main {
 

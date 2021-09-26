@@ -1,6 +1,4 @@
-package qtx.view;
-
-import qtx.controller.PlayerController;
+package edu.concurso.view;
 
 import java.util.Scanner;
 

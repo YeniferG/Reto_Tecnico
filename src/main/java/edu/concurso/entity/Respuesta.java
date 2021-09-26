@@ -1,6 +1,4 @@
-package qtx.entity;
-
-import org.hibernate.type.descriptor.sql.TinyIntTypeDescriptor;
+package edu.concurso.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

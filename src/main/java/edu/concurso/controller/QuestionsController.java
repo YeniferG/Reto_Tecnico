@@ -1,9 +1,9 @@
-package qtx.controller;
+package edu.concurso.controller;
 
-import qtx.entity.Categoria;
-import qtx.entity.Conexion;
-import qtx.entity.Pregunta;
-import qtx.entity.Respuesta;
+import edu.concurso.entity.Categoria;
+import edu.concurso.entity.Conexion;
+import edu.concurso.entity.Pregunta;
+import edu.concurso.entity.Respuesta;
 
 import java.util.List;
 import java.util.Scanner;
