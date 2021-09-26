@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class PlayerController {
 
-    public void saveInformationPlayer(String userName, int userIdentification, int prizePool, String estado){
+    public void saveInformationPlayer(String userName, int userIdentification, int prizePool, String status){
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia");
         EntityManager em = emf.createEntityManager();
@@ -18,7 +18,7 @@ public class PlayerController {
         player.setNombre(userName);
         player.setIdentificacion(userIdentification);
         player.setPremioAcumulado(prizePool);
-        player.setEstadoJuego(estado);
+        player.setEstadoJuego(status);
         player.setFechaJuegoGanado(new Date());
 
         em.getTransaction().begin();

@@ -10,6 +10,8 @@ public class GameView {
 
 
     public void welcomeGame(){
+        System.out.println("CONCURSO DE PREGUNTAS Y PALABRAS");
+        System.out.println("*************************************");
         System.out.println("Bienvenido al juego Gana Con Toda" +
                 "\n_________________________________");
         PlayerView playerView = new PlayerView();

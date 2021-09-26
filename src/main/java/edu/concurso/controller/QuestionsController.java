@@ -17,7 +17,7 @@ public class QuestionsController {
         Conexion con = new Conexion();
         int prizePool = 0;
         PlayerController playerController = new PlayerController();
-        String estado = "Ganado";
+        String status = "Ganado";
 
         List<Categoria> categorias = con.conexion().createQuery("FROM Categoria").getResultList();
         for(Categoria category: categorias){
@@ -30,28 +30,28 @@ public class QuestionsController {
                 prizePool += category.getPremio();
                 System.out.println("¡Respuesta Correcta! *** Has Ganado "+category.getPremio()+" puntos"
                         +" *** Ahora tienes "+prizePool+" puntos");
-                System.out.println("_________________________________");
+                System.out.println(".....................................................................");
                 System.out.println("¿Desea Continuar el Juego?\n1. Aceptar\n2. Salir");
                 int answerUser = input.nextInt();
-                System.out.println("_________________________________");
+                System.out.println(".....................................................................");
                 if(answerUser == 2){
                     System.out.println("GAME OVER!\nGracias por participar vuelve pronto");
-                    estado = "Retiro Voluntario";
-                    System.out.println("_________________________________");
+                    status = "Retiro Voluntario";
+                    System.out.println(".....................................................................");
                     break;
                 }
             }else if(respuestas.get(answerQuestion).isVerificacion() == '0'){
                 prizePool=0;
                 System.out.println("¡Respuesta Incorrecta! "+"Vuelve a intentarlo en otro momento\nTus premios obtenidos fueron: "+prizePool+" puntos");
-                estado = "Perdido";
-                System.out.println("_________________________________");
+                status = "Perdido";
+                System.out.println(".....................................................................");
                 break;
             }
 
         }
-        System.out.println("Acabas de ganarte "+prizePool+" puntos.");
+        System.out.println("*** Acabas de ganarte "+prizePool+" puntos ***");
 
-        playerController.saveInformationPlayer(userName,userIdentification,prizePool,estado);
+        playerController.saveInformationPlayer(userName,userIdentification,prizePool,status);
 
     }
 
