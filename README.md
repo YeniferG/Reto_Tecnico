@@ -1,4 +1,6 @@
-- Para realizar el desarrollo del reto utilice java trabajando sobre el IDE Intellij y con el gestor de base de datos Mysql.
+Cordial saludo,
+
+- Para realizar el desarrollo del reto utilice el lenguaje de programación java trabajando sobre el IDE Intellij y con el gestor de base de datos Mysql.
 
 - Para realizar la conexión con la BBDD utilice el Framework Hibernate y JPA.
 
