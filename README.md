@@ -4,6 +4,8 @@ Cordial saludo,
 
 - Para realizar la conexión con la BBDD utilice el Framework Hibernate y JPA.
 
+- El proyecto se ejecutara por consola.
+
 - En la ruta src/main/resources/BBDD ubicada en la estructura del proyecto encontraran un archivo .sql 
   equivalente a la base de datos con la que realice el reto tecnico, para su respectiva ejecución.
   
